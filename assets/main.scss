@@ -1,0 +1,126 @@
+body {
+    background: rgb(41, 41, 41);
+    font-family: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+
+    header {
+        background: black;
+        color: white;
+        width: 100%;
+
+        img {
+            width: 150px;
+        }
+
+        .contact {
+            position: absolute;
+            right: 250px;
+            top: 25px;
+            font-size: 20px;
+            text-align: right;
+
+            p {
+                color: rgb(172, 155, 113);
+
+                #small-text {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .topMenu {
+            background: rgb(182, 0, 0);
+            font-size: 20px;
+            text-align: center;
+            height: 50px;
+            line-height: 50px;
+
+            li {
+                display: inline-block;
+                margin-left: 50px;
+            }
+        }
+    }
+
+    .wrapper {
+        width: 1120px;
+        margin-left: 15%;
+
+        .content {
+            // background: white !important;
+            height: 1300px;
+            grid-template-areas: "hd hd";
+            text-align: justify;
+
+            h1 {
+                font-size: 40px;
+                grid-area: hd;
+                text-align: center;
+            }
+
+            img {
+                width: 550px;
+                height: 300px;
+            }
+
+            p {
+                padding: 0px 20px 60px 0px;
+                font-size: 20px;
+            }
+
+            .row1,
+            .row2,
+            .row3 {
+                margin-top: 40px;
+            }
+
+            // .row1 {
+            //     p {
+            //         grid-area: text1;
+            //     }
+            // }
+
+            .row1 {
+                display: grid;
+                grid-template-columns: 40% auto;
+                grid-template-rows: 8% 27% 27%;
+
+                img {
+                    padding-left: 15%;
+                }
+            }
+
+            .row2 {
+                display: grid;
+                grid-template-columns: auto 40%;
+                grid-template-rows: 8% 27% 27%;
+
+                img {
+                    padding-right: 15%;
+                }
+            }
+
+            .row3 {
+                display: grid;
+                grid-template-columns: 40% auto;
+                grid-template-rows: 8% 27% 27%;
+
+                img {
+                    padding-left: 15%;
+                }
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        line-height: 50px;
+        width: 100%;
+        color: white;
+        background: black;
+        height: 60px;
+    }
+}

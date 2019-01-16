@@ -1,0 +1,128 @@
+body {
+  background: #292929;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body header {
+  background: black;
+  color: white;
+  width: 100%;
+}
+
+body header img {
+  width: 150px;
+}
+
+body header .contact {
+  position: absolute;
+  right: 250px;
+  top: 25px;
+  font-size: 20px;
+  text-align: right;
+}
+
+body header .contact p {
+  color: #ac9b71;
+}
+
+body header .contact p #small-text {
+  font-size: 20px;
+}
+
+body header .topMenu {
+  background: #b60000;
+  font-size: 20px;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+}
+
+body header .topMenu li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+body .wrapper {
+  width: 1120px;
+  margin-left: 15%;
+}
+
+body .wrapper .content {
+  height: 1300px;
+      grid-template-areas: "hd hd";
+  text-align: justify;
+}
+
+body .wrapper .content h1 {
+  font-size: 40px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: hd;
+  text-align: center;
+}
+
+body .wrapper .content img {
+  width: 550px;
+  height: 300px;
+}
+
+body .wrapper .content p {
+  padding: 0px 20px 60px 0px;
+  font-size: 20px;
+}
+
+body .wrapper .content .row1,
+body .wrapper .content .row2,
+body .wrapper .content .row3 {
+  margin-top: 40px;
+}
+
+body .wrapper .content .row1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% auto;
+      grid-template-columns: 40% auto;
+  -ms-grid-rows: 8% 27% 27%;
+      grid-template-rows: 8% 27% 27%;
+}
+
+body .wrapper .content .row1 img {
+  padding-left: 15%;
+}
+
+body .wrapper .content .row2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 40%;
+      grid-template-columns: auto 40%;
+  -ms-grid-rows: 8% 27% 27%;
+      grid-template-rows: 8% 27% 27%;
+}
+
+body .wrapper .content .row2 img {
+  padding-right: 15%;
+}
+
+body .wrapper .content .row3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% auto;
+      grid-template-columns: 40% auto;
+  -ms-grid-rows: 8% 27% 27%;
+      grid-template-rows: 8% 27% 27%;
+}
+
+body .wrapper .content .row3 img {
+  padding-left: 15%;
+}
+
+body footer {
+  text-align: center;
+  line-height: 50px;
+  width: 100%;
+  color: white;
+  background: black;
+  height: 60px;
+}
+/*# sourceMappingURL=main.css.map */
