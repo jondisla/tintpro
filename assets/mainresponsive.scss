@@ -31,6 +31,8 @@
         margin: 140px 0px auto 0px;
 
         .content {
+            height: 100%;
+
             h1 {
                 font-size: 90px;
             }
@@ -60,4 +62,12 @@
             }
         }
     }
+
+    footer {
+        bottom: 0;
+        width: 28em;
+        font-size: 40px;
+        height: 180px;
+    }
+
 }

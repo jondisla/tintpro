@@ -25,6 +25,9 @@
   .wrapper {
     margin: 140px 0px auto 0px;
   }
+  .wrapper .content {
+    height: 100%;
+  }
   .wrapper .content h1 {
     font-size: 90px;
   }
@@ -52,6 +55,12 @@
   .wrapper .content .row1 p,
   .wrapper .content .row3 p {
     margin-left: 20px;
+  }
+  footer {
+    bottom: 0;
+    width: 28em;
+    font-size: 40px;
+    height: 180px;
   }
 }
 /*# sourceMappingURL=mainresponsive.css.map */
