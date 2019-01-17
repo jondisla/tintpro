@@ -1,0 +1,57 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  header {
+    height: 300px !important;
+  }
+  header img {
+    position: absolute;
+    top: 0;
+    width: 380px;
+  }
+  header .contact,
+  header .topMenu {
+    display: none;
+  }
+  header .sanmenu {
+    display: block;
+    color: #ac9b71;
+    font-size: 90px;
+    position: absolute;
+    right: 25px;
+    text-align: right;
+    top: 20%;
+    line-height: 30px;
+  }
+  .wrapper {
+    margin: 140px 0px auto 0px;
+  }
+  .wrapper .content h1 {
+    font-size: 90px;
+  }
+  .wrapper .content p {
+    font-size: 60px;
+    line-height: 80px;
+    margin-top: 30px;
+  }
+  .wrapper .content .row1,
+  .wrapper .content .row3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 0% 0% 0%;
+        grid-template-rows: 0% 0% 0%;
+  }
+  .wrapper .content .row1 img,
+  .wrapper .content .row3 img {
+    width: 100%;
+    height: 800px;
+    margin-left: -20px;
+    z-index: -1;
+  }
+  .wrapper .content .row1 p,
+  .wrapper .content .row3 p {
+    margin-left: 20px;
+  }
+}
+/*# sourceMappingURL=mainresponsive.css.map */

@@ -1,19 +1,22 @@
 body {
-  background: #292929;
+  background: url("img/blackgrey.jpeg") no-repeat center center fixed;
+  background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body header {
+header {
   background: black;
   color: white;
   width: 100%;
+  top: 0;
+  position: fixed;
 }
 
-body header img {
+header img {
   width: 150px;
 }
 
-body header .contact {
+header .contact {
   position: absolute;
   right: 250px;
   top: 25px;
@@ -21,15 +24,15 @@ body header .contact {
   text-align: right;
 }
 
-body header .contact p {
+header .contact p {
   color: #ac9b71;
 }
 
-body header .contact p #small-text {
+header .contact p #small-text {
   font-size: 20px;
 }
 
-body header .topMenu {
+header .topMenu {
   background: #b60000;
   font-size: 20px;
   text-align: center;
@@ -37,23 +40,32 @@ body header .topMenu {
   line-height: 50px;
 }
 
-body header .topMenu li {
+header .topMenu li {
   display: inline-block;
   margin-left: 50px;
 }
 
-body .wrapper {
-  width: 1120px;
-  margin-left: 15%;
+header .topMenu .active {
+  border-bottom: 2px solid gold;
 }
 
-body .wrapper .content {
+.wrapper {
+  width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper .content {
+  background: rgba(0, 0, 0, 0.625) !important;
+  color: white;
   height: 1300px;
       grid-template-areas: "hd hd";
-  text-align: justify;
+  text-align: center;
+  margin-top: 160px;
+  padding-top: 40px;
 }
 
-body .wrapper .content h1 {
+.wrapper .content h1 {
   font-size: 40px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -62,67 +74,82 @@ body .wrapper .content h1 {
   text-align: center;
 }
 
-body .wrapper .content img {
+.wrapper .content img {
   width: 550px;
   height: 300px;
 }
 
-body .wrapper .content p {
+.wrapper .content p {
   padding: 0px 20px 60px 0px;
   font-size: 20px;
+  line-height: 30px;
 }
 
-body .wrapper .content .row1,
-body .wrapper .content .row2,
-body .wrapper .content .row3 {
+.wrapper .content button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#c10000), to(#570000));
+  background: linear-gradient(#c10000, #570000);
+  border-radius: 10px;
+  color: white;
+  width: 160px;
+  height: 70px;
+  font-size: 20px;
+  margin-top: 30px;
+  border-color: transparent;
+}
+
+.wrapper .content .row1,
+.wrapper .content .row2,
+.wrapper .content .row3 {
   margin-top: 40px;
 }
 
-body .wrapper .content .row1 {
+.wrapper .content .row1,
+.wrapper .content .row3 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% auto;
-      grid-template-columns: 40% auto;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
   -ms-grid-rows: 8% 27% 27%;
       grid-template-rows: 8% 27% 27%;
 }
 
-body .wrapper .content .row1 img {
-  padding-left: 15%;
+.wrapper .content .row1 img,
+.wrapper .content .row3 img {
+  padding-left: 2%;
 }
 
-body .wrapper .content .row2 {
+.wrapper .content .row1 p,
+.wrapper .content .row3 p {
+  margin-left: 20px;
+}
+
+.wrapper .content .row2 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 40%;
-      grid-template-columns: auto 40%;
+  -ms-grid-columns: auto 50%;
+      grid-template-columns: auto 50%;
   -ms-grid-rows: 8% 27% 27%;
       grid-template-rows: 8% 27% 27%;
 }
 
-body .wrapper .content .row2 img {
-  padding-right: 15%;
+.wrapper .content .row2 img {
+  padding-right: 2%;
 }
 
-body .wrapper .content .row3 {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 40% auto;
-      grid-template-columns: 40% auto;
-  -ms-grid-rows: 8% 27% 27%;
-      grid-template-rows: 8% 27% 27%;
+.wrapper .content .row2 p {
+  margin-left: 20px;
 }
 
-body .wrapper .content .row3 img {
-  padding-left: 15%;
-}
-
-body footer {
+footer {
   text-align: center;
   line-height: 50px;
   width: 100%;
   color: white;
   background: black;
   height: 60px;
+}
+
+.sanmenu {
+  display: none;
 }
 /*# sourceMappingURL=main.css.map */
